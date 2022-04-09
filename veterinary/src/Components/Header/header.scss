@@ -1,0 +1,150 @@
+$color-text:#949494;
+$color_1:#333333;
+$color_2: #FFBD54;
+$color_3: #3D9CEA;
+
+.topbar {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 11px;
+    margin-bottom: 13px;
+
+    p {
+        margin: 0;
+        display: inline-block;
+        margin-left: 9px;
+    }
+
+    img {
+        margin-bottom: -2px;
+        display: inline-block;
+    }
+
+    .topbar__home {
+        margin-left: 258px;
+    }
+
+    .topbar__phone {
+        display: flex;
+        margin-left: 106px;
+        align-items: center;
+
+        .phone1 {
+            img {
+                margin-left: 9px;
+                margin-bottom: -2px;
+            }
+        }
+
+        .phone2 {
+            img {
+                margin-left: 9px;
+                margin-bottom: 2px;
+            }
+        }
+
+        p:active {
+            opacity: 0.6;
+            color: $color_1;
+        }
+
+        p:hover {
+            color: $color_2;
+        }
+    }
+
+    .topbar__date {
+        margin-left: 98px;
+
+        img {
+            margin-bottom: -2px;
+        }
+
+        .date__day {
+            display: inline-block;
+            margin-left: 9px;
+
+            span {
+                margin-right: 17px;
+            }
+        }
+    }
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    background: white;
+    height: 61px;
+
+    .navbar__logo {
+        margin-left: 65px;
+        margin-right: calc(148.45px - 55px);
+
+        &:active {
+            opacity: .6;
+        }
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .navbar__items {
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+
+        li {
+            margin-left: 55px;
+            border-bottom: 4px solid white;
+            padding-top: 4px;
+
+            &:active {
+                opacity: .6;
+            }
+
+            &:hover {
+                border-bottom: 4px solid #F4FFAD;
+            }
+        }
+    }
+
+    .navbar__question {
+        display: flex;
+        margin-left: 163px;
+        border: none;
+        background: transparent;
+        padding: 0;
+
+        img {
+            width: 23px;
+            margin-bottom: 9.81px;
+            margin-right: 4.68px;
+        }
+    }
+
+    .active {
+        position: relative;
+    }
+
+    .active::before {
+        content: '';
+        background: url('../../libs/images/fish.svg') no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: -37px;
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+    }
+
+    .no-active::before {
+        content: '';
+        background: none !important;
+    }
+}

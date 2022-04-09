@@ -1,0 +1,202 @@
+$color-text:#949494;
+$color_1:#333333;
+$color_2: #FFBD54;
+$color_3: #3D9CEA;
+
+.article-main {
+    .hero {
+        padding-top: 118px;
+        padding-left: 177px;
+        display: flex;
+        margin-bottom: 41px;
+
+        .hero__text {
+            h2 {
+                width: 560px;
+            }
+
+            p {
+                color: $color-text;
+                margin-top: 21px;
+                width: 447px;
+            }
+        }
+
+        .hero__img {
+            margin-left: 80px;
+            margin-top: -80px;
+            position: relative;
+
+            .hero__ellipse1 {
+                position: absolute;
+                bottom: -10px;
+                left: 20px;
+            }
+
+            .hero__ellipse2 {
+                position: absolute;
+                bottom: -30px;
+                left: 200px;
+            }
+        }
+    }
+
+    .article__item-big {
+        width: 1308px;
+        margin-left: auto;
+        margin-right: auto;
+        background: white;
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+
+
+
+        .article__text {
+            margin-top: 21px;
+            margin-left: 82px;
+            padding-top: 68px;
+
+            p {
+                line-height: 20px;
+                margin-top: 20px;
+                width: 515px;
+                color: $color-text;
+            }
+        }
+
+        h4.article__title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 38px;
+            width: 325px;
+        }
+
+        .article__links2 {
+            margin-bottom: 31px;
+
+            a {
+                color: $color_3;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 22px;
+                margin-right: 7px;
+            }
+
+            span.article__date {
+                margin-left: 342px;
+                color: $color-text;
+            }
+        }
+
+        .article__more {
+            line-height: 21px;
+            color: $color_1;
+            text-decoration: none;
+            position: relative;
+            margin-left: 25px;
+            margin-top: 52px;
+            display: inline-block;
+        }
+
+        .article__more::before {
+            content: '';
+            background: url('../../libs/images/pet.svg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: -28px;
+            width: 21px;
+            height: 21px;
+            z-index: 1;
+        }
+    }
+
+    .article__items {
+        display: flex;
+        width: 1310px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 126px;
+
+        .article__item {
+            width: 305px;
+            background: white;
+            border: 1px solid #E4E4E2;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 60px;
+
+            &:hover {
+                box-shadow: 2px 5px 10px rgb(168, 166, 166);
+                border: none;
+            }
+
+            .article__text {
+                padding: 21px 22px 38px 30px;
+
+                .article__date {
+                    display: inline-block;
+                    margin-left: 182px;
+                    color: $color-text;
+                }
+
+                .article__title {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 25px;
+                }
+
+                .article__info {
+                    color: $color-text;
+                    margin-top: 10px;
+                    margin-bottom: 38px;
+                }
+
+                .article__more {
+                    line-height: 21px;
+                    color: $color_1;
+                    text-decoration: none;
+                    position: relative;
+                    margin-left: 25px;
+                }
+
+                .article__more::before {
+                    content: '';
+                    background: url('../../libs/images/pet.svg') no-repeat center center/cover;
+                    position: absolute;
+                    top: 0px;
+                    left: -28px;
+                    width: 21px;
+                    height: 21px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    .article__item_more {
+        padding-left: 64px;
+        padding-right: 37px;
+        position: relative;
+        margin-top: 116px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: -97px;
+
+    }
+
+    .article__item_more::before {
+        content: '';
+        background: url('../../libs/images/document.svg') no-repeat center center/cover;
+        position: absolute;
+        top: 14px;
+        left: 37px;
+        width: 21px;
+        height: 21px;
+        z-index: 1;
+    }
+
+}
